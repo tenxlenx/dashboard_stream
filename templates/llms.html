@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LLMs</title>
+    <style>
+        /* New styles for the top navigation bar */
+        .top-nav {
+            background-color: #333;
+            height: 30px; /* Set the height */
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .top-nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .top-nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .top-nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .chat-frame {
+            width: 100%;
+            height: calc(100vh - 30px);  /* 100vh is the full viewport height, 30px is the height of the top-nav */
+            border: none;
+        }
+    </style>
+
+</head>
+<body>
+    <nav class="top-nav">
+        <ul>
+            <li><a href="/">Dashboard</a></li>
+            <li><a href="/llms">LLMs</a></li>
+            <!-- Add more navigation links as needed -->
+        </ul>
+    </nav>
+    <div id="chat">
+        <iframe src="https://reactor.brill-neon.ts.net:7860"  class="chat-frame"></iframe>
+    </div>
+    <!-- Add your content here -->
+</body>
+</html>

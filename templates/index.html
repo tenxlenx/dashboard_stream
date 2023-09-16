@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>htop Stream</title>
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <nav class="top-nav">
+        <ul>
+            <li><a href="/">Dashboard</a></li>
+            <li><a href="/llms">LLms</a></li>
+            <!-- Add more navigation links as needed -->
+        </ul>
+    </nav>
 </head>
 <body>
-
-<iframe src="https://reactor.brill-neon.ts.net:9004/wetty" width="800" height="600"></iframe>
-
+    <div class="container">
+        <div class="left-panel">
+            <div id="btop-container">
+                <iframe id="frame-btop" src="https://reactor.brill-neon.ts.net:9004/wetty" class="iframe-left"></iframe>
+            </div>
+            <div id="nvtop-container">
+                <iframe id="frame-nvtop" src="https://reactor.brill-neon.ts.net:9003/wetty" class="iframe-left"></iframe>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div id="new-container1">
+                <iframe id="frame-new1" src="https://reactor.brill-neon.ts.net:9002/wetty" class="iframe-right"></iframe>
+            </div>
+            <div id="new-container2">
+                <iframe id="frame-new2" src="https://reactor.brill-neon.ts.net:9001/wetty" class="iframe-right"></iframe>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='focus-indicator.js') }}"></script>
 </body>
 </html>

@@ -1,0 +1,83 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: black;
+}
+
+/* New styles for the top navigation bar */
+.top-nav {
+    background-color: #333;
+    height: 30px; /* Set the height */
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.top-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.top-nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.left-panel, .right-panel {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-panel {
+    flex: 0.9;
+}
+
+.right-panel {
+    flex: 1.1;
+}
+
+#btop-container, #nvtop-container {
+    height: calc(50% - 4px);
+    overflow-y: auto;
+}
+
+/* New right container styles */
+#new-container1, #new-container2 {
+    height: calc(50% - 4px);
+}
+
+.iframe-left, .iframe-right {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    border: 4px solid transparent;
+}
+
+.iframe-left:hover, .iframe-right:hover {
+    border: 4px solid blue;
+}
+
+.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+}

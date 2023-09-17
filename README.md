@@ -1,6 +1,6 @@
 # Flask-based Dashboard
 
-![Dashboard Screenshot](./assets/.png)
+![Dashboard Screenshot](./assets/dashboard.png)
 
 ## Description
 

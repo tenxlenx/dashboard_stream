@@ -20,7 +20,7 @@ You need to have your own server, but I suggest you use tailscale for a private 
 
 - Python 3.x
 - Flask
-- `htop`, `btop`, `dry`, `cgroup-tools`, `nvtop` packages
+- `htop`, `btop`, `dry`, `cgroup-tools`, `nvtop`, `nnn` packages
 - SSL certificate and key files - I use tailscale for this which is super easy to use
 - Command-line arguments for server details (user, password, host, port)
 
